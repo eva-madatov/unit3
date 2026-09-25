@@ -14,9 +14,11 @@
 let start = 0;
 let end = 10;
 function getNumbersInRange(start, end) {
+  const answer = [];
   for (let i = start; i <= end; i++) {
-    return [1, 2, 3, 4, 5];
+    answer.push(i);
   }
+  return answer;
 }
 
 console.log(getNumbersInRange(1, 5)); // [1, 2, 3, 4, 5]
@@ -26,9 +28,12 @@ console.log(getNumbersInRange(3, 8)); // [3, 4, 5, 6, 7, 8]
 // ---------- Problem 2: Sum a Range ----------
 // Return the sum of every integer from start to end, inclusive.
 // Use the accumulator pattern: let total = 0; total += i; each pass.
+// TODO: your code here
+
 function sumRange(start, end) {
-  // TODO: your code here
+  let result = start + end;
 }
+console.log(result);
 
 console.log(sumRange(1, 5)); // 15
 console.log(sumRange(1, 100)); // 5050
