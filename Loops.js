@@ -31,10 +31,9 @@ console.log(getNumbersInRange(3, 8)); // [3, 4, 5, 6, 7, 8]
 // TODO: your code here
 
 function sumRange(start, end) {
-let i = start;
-while (i <= end) {
-  console.log(start + end);
-}
+  let total = 0;
+  for (let i = start; i <= end; total += i++) {}
+  return total;
 }
 
 console.log(sumRange(1, 5)); // 15
