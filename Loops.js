@@ -30,15 +30,16 @@ console.log(getNumbersInRange(3, 8)); // [3, 4, 5, 6, 7, 8]
 // Use the accumulator pattern: let total = 0; total += i; each pass.
 // TODO: your code here
 
-function sumRange(start, end) {}
+function sumRange(start, end) {
 let i = start;
 while (i <= end) {
   console.log(start + end);
 }
+}
 
 console.log(sumRange(1, 5)); // 15
 console.log(sumRange(1, 100)); // 5050
-console.log(sumRange(4, 4)); // 4+
+console.log(sumRange(4, 4)); // 4
 
 // ---------- Problem 3: Countdown ----------
 // Return an array counting down from n to 1.
