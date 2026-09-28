@@ -38,7 +38,7 @@ while (i <= end) {
 
 console.log(sumRange(1, 5)); // 15
 console.log(sumRange(1, 100)); // 5050
-console.log(sumRange(4, 4)); // 4
+console.log(sumRange(4, 4)); // 4+
 
 // ---------- Problem 3: Countdown ----------
 // Return an array counting down from n to 1.
