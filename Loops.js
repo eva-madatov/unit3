@@ -46,10 +46,11 @@ console.log(sumRange(4, 4)); // 4
 
 function countdown(n) {
   while (n > 0) {
-    const answer = [];
-    answer.push(n);
+    const count = [];
+    console.log([n]);
     n--;
   }
+  `break`;
 }
 
 console.log(countdown(5)); // [5, 4, 3, 2, 1]
@@ -102,8 +103,5 @@ console.log(primesUnder(2)); // []
 // Rewrite multiplicationTable so it uses break or continue to skip
 // printing the row where the row number equals the column number
 // (the diagonal).
-function multiplicationTableSkipDiagonal(n) {
-  // TODO: your code here
-}
-
-// console.log(multiplicationTableSkipDiagonal(3)
+//function multiplicationTableSkipDiagonal(n) {
+// TODO: your code here
