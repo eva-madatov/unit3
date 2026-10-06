@@ -45,13 +45,12 @@ console.log(sumRange(4, 4)); // 4
 // Use a while loop, not a for loop.
 
 function countdown(n) {
+  let count = [];
   while (n >= 1) {
-    const count = [];
-    console.log([n]);
     count.push(n);
     n--;
   }
-  `break`;
+  return count;
 }
 
 console.log(countdown(5)); // [5, 4, 3, 2, 1]
@@ -63,12 +62,17 @@ console.log(countdown(8)); // [8, 7, 6, 5, 4, 3, 2, 1]
 // Loop through every index of the string and use an if statement to
 // check whether that character is a vowel. Access a character with
 // str[i] or str.charAt(i).
-
 // TODO: your code here
+
 function countVowels(str) {
-  const vowels = ["a", "e", "o", "i", "u"];
-  for (let i = 0; i <= str.length; i++);
-  console.log(vowels);
+  const answer = ["a", "e", "o", "i", "u"];
+  let vowel = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (answer.includes(str[i])) {
+      vowel++;
+    }
+  }
+  return vowel;
 }
 
 console.log(countVowels("hello")); // 2
